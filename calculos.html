@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Some()">Somar</button>
+    <button onclick="Area()">Área do retângulo</button>
+    <script>
+        function Some(){
+        let Nome=prompt("Informe seu nome");
+        alert("Olá, "+Nome);
+        let x=Number (prompt("Informe um número"));
+        let y=Number (prompt("Informe um outro número"));
+        let resultado=x+y;
+        alert("O resultado da soma é "+resultado);
+    }
+
+    function Area(){
+        let x=Number (prompt("Informe o valor X"));
+        let y=Number (prompt("Informe o valor Y"));
+        let resultado=x*y;
+        alert("O resultado da área é "+resultado+"m²")
+    }
+
+    function Raiz(){
+        let r=Number(prompt("Informe um valor"));
+        let resp=Math.sqrt(r);
+        alert("O resultado da raiz é"+resp);
+    }
+
+    function multiplica(){
+        let a=Number(prompt("Informe o valor de A"));
+        let b=Number(prompt("Informe o valor de B"));
+        alert(calc(a,b))
+    }
+    function calc (a,b){
+        return a*b
+    }
+    </script>
+</body>
+</html>
